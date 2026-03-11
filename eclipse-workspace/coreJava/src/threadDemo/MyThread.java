@@ -1,0 +1,14 @@
+package threadDemo;
+
+public class MyThread extends Thread {
+	
+	public void run() {
+		String s = "Thread started running.";
+		System.out.println(s);
+	}
+	public static void main(String[] args) {
+		MyThread t1 = new MyThread();
+		t1.start();
+	}
+
+}
